@@ -1,0 +1,122 @@
+.Game {
+  text-align: center;
+
+  width: 100%;
+  height: 100%;
+}
+
+.Game-header {
+  background-color: #222;
+  height: 50px;
+  padding: 20px;
+  color: white;
+}
+
+.Game-title {
+  font-size: 1.5em;
+}
+
+.status {
+  padding: 20px;
+  white-space: pre;
+}
+
+.gameButton {
+  font-size: 2em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  margin-top: 0.5em;
+  border-radius: 15px;
+  color: #55cc88;
+  border-color: #55cc88;
+  padding: 0 5vh;
+}
+
+.gameButton:hover {
+  color: green;
+}
+
+.Game-intro {
+  font-size: large;
+}
+
+.Card {
+  display: inline-block;
+  border-color: white;
+  border-width: 5px;
+  border-style: solid;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  width: 100px;
+}
+
+.quantity-cards-button > button {
+  font-size: 3.5em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  margin-top: 0.5em;
+ width: 40vw;
+  border-radius: 15px;
+  color: #55cc88;
+  border-color: #55cc88;
+}
+
+.quantity-cards-button > button:hover {
+  border-color: green;
+}
+
+.Matched {
+  border-color: #55cc88;
+}
+
+.CardContainer {
+  display: inline-block;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.flip-card {
+  width: 100px;
+  height: 100px;
+  perspective: 1000px;
+}
+
+.cardInner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+}
+
+.animate .cardInner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.cardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.cardBack {
+  transform: rotateY(180deg);
+}
+
+body {
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
